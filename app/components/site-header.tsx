@@ -1,4 +1,5 @@
 import { Castle } from "lucide-react";
+import Link from "next/link";
 
 const navigationItems = [
   { label: "Palaces", href: "#palaces" },
@@ -10,7 +11,7 @@ export function SiteHeader() {
   return (
     <header className="relative z-10 border-b border-zinc-200/80 bg-white/80 backdrop-blur">
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-        <a href="/" className="flex min-w-0 items-center gap-3">
+        <Link href="/" className="flex min-w-0 items-center gap-3">
           <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-zinc-950 text-white">
             <Castle className="h-5 w-5" aria-hidden="true" />
           </span>
@@ -20,7 +21,7 @@ export function SiteHeader() {
             </span>
             <span className="text-xs text-zinc-500">Learning app</span>
           </span>
-        </a>
+        </Link>
 
         <nav
           aria-label="Main navigation"
