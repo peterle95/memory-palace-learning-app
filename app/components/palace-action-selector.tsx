@@ -68,8 +68,8 @@ export function PalaceActionSelector() {
     >
       <div className="mx-auto mb-8 max-w-2xl text-center">
         <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-md border border-emerald-200 bg-emerald-50 text-emerald-700">
-          <Sparkles className="h-5 w-5" aria-hidden="true" />
-        </div>
+{/*           <Sparkles className="h-5 w-5" aria-hidden="true" />
+ */}        </div>
         <h1
           id="palace-choice-title"
           className="text-4xl font-semibold text-zinc-950 sm:text-5xl"
