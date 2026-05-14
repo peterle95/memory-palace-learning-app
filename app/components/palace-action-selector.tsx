@@ -67,7 +67,7 @@ export function PalaceActionSelector() {
       className="mx-auto w-full max-w-4xl"
     >
       <div className="mx-auto mb-8 max-w-2xl text-center">
-        <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-md border border-emerald-200 bg-emerald-50 text-emerald-700">
+        <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-md border border-emerald-200/80 bg-white/25 text-emerald-700 shadow-sm backdrop-blur-md">
           <Sparkles className="h-5 w-5" aria-hidden="true" />
         </div>
         <h1
@@ -94,9 +94,9 @@ export function PalaceActionSelector() {
                 aria-pressed={isSelected}
                 onClick={() => selectAction(action.id)}
                 className={cn(
-                  "flex min-h-44 flex-col justify-between rounded-md border bg-white/95 p-5 text-left shadow-sm transition hover:-translate-y-0.5 hover:border-emerald-300 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2",
+                  "flex min-h-44 flex-col justify-between rounded-md border bg-white/30 p-5 text-left shadow-sm backdrop-blur-md transition hover:-translate-y-0.5 hover:border-emerald-300 hover:bg-white/45 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2",
                   isSelected
-                    ? "border-emerald-600 bg-emerald-50 text-zinc-950"
+                    ? "border-emerald-600 bg-emerald-50/40 text-zinc-950"
                     : "border-zinc-200 text-zinc-700",
                 )}
               >
@@ -108,8 +108,8 @@ export function PalaceActionSelector() {
                     className={cn(
                       "rounded-sm border px-2 py-1 text-xs font-medium",
                       isSelected
-                        ? "border-emerald-300 bg-white text-emerald-700"
-                        : "border-zinc-200 bg-zinc-50 text-zinc-500",
+                        ? "border-emerald-300 bg-white/70 text-emerald-700"
+                        : "border-zinc-200 bg-white/45 text-zinc-500",
                     )}
                   >
                     {isSelected ? "Selected" : "Select"}
@@ -132,7 +132,7 @@ export function PalaceActionSelector() {
           })}
         </div>
 
-        <div className="rounded-md border border-zinc-200 bg-white/95 p-5 shadow-sm">
+        <div className="rounded-md border border-white/50 bg-white/30 p-5 shadow-sm backdrop-blur-md">
           <div className="flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
             <div className="min-w-0 flex-1">
               <p className="text-sm font-semibold text-zinc-950">

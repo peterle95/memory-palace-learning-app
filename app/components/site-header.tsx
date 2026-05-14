@@ -9,7 +9,7 @@ const navigationItems = [
 
 export function SiteHeader() {
   return (
-    <header className="relative z-10 border-b border-zinc-200/80 bg-white/80 backdrop-blur">
+    <header className="relative z-10 border-b border-white/35 bg-white/20 backdrop-blur-md">
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex min-w-0 items-center gap-3">
           <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-zinc-950 text-white">
